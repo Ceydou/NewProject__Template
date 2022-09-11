@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document title</title>
+    <title>Liste des commandes Git</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
@@ -15,20 +15,229 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+   
     <!-- Styles CSS -->
+    <link rel="icon" type="image/x-icon" href="assets/img/git_favicon.svg">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 <body>
 
-    <header>
-
+    <header class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Commandes Git</h1>
+            </div>
+        </div>
     </header>
 
-    <section>
+    <section class="container">
+        <article>
+            <div class="row">
+                <div class="col">
+                    <h2>Git init</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Initialiser un nouveau repo</p>
+                </div>
+
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git init</span> <span class="prmt">"Nom du repo git"</span>
+                    </pre>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="row">
+                <div class="col">
+                    <h2>Git remote</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Lier un dépôt local au dépôt distant</p>
+                </div>
+
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git remote add origin</span> <span class="prmt">https://github.com/account/project.git</span>
+                    </pre>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="row">
+                <div class="col">
+                    <h2>Git clone</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Cloner un dépôt déjà existant</p>
+                </div>
+
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git clone</span> <span class="prmt">https://github.com/account/project.git</span>
+                    </pre>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="row">
+                <div class="col">
+                    <h2>Git add</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Ajouter un fichier en zone staging</p>
+                </div>
+
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git add</span> <span class="prmt">index.html</span>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Ajouter tous les fichiers en zone staging</p>
+                </div>
+
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git add *</span>
+                    </pre>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="row">
+                <div class="col">
+                    <h2>Git commit</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Faire un commit de son code avec un message</p>
+                </div>
+
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git commit -m</span> <span class="prmt">"le message"</span>
+                    </pre>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="row">
+                <div class="col">
+                    <h2>Git branch</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Liste toutes les branches du dépôt</p>
+                </div>
+
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git branch</span>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Créer une nouvelle branche sur le dépôt</p>
+                </div>
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git branch</span> <span class="prmt">"nom de la branche"</span>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Supprimer une branche</p>
+                </div>
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git branch -d</span> <span class="prmt">"nom de la branche"</span>
+                    </pre>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="row">
+                <div class="col">
+                    <h2>Git checkout</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Pour passer d'une branche à l'autre</p>
+                </div>
+
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git checkout</span>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Créer une nouvelle branche et switcher directement sur celle-ci</p>
+                </div>
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git checkout -b</span> <span class="prmt">"nom de la branche"</span>
+                    </pre>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="row">
+                <div class="col">
+                    <h2>Git push</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Pour envoyer les commits sur le dépôt distant</p>
+                </div>
+
+                <div class="col-md-7">
+                    <pre>
+                        <span class="cmd">git push -u origin main</span>
+                    </pre>
+                </div>
+            </div>
+        </article>
 
     </section>
 

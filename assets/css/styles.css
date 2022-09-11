@@ -1,8 +1,64 @@
-/*==================== STYLES CSS OF ====================*/
-
-
+/*==================== STYLES CSS OF COMMANDES GIT ====================*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+.strg {
+  font-weight: 700;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  color: #1a2b3b;
+  font-weight: 400;
+  background: #f5f7f9;
+}
+
+header {
+  height: 10rem;
+}
+header .row {
+  height: 100%;
+  align-items: center;
+}
+header h1::before {
+  content: "";
+  height: 1.5rem;
+  width: 15rem;
+  background: #31f2cc;
+  position: absolute;
+  top: 5.5rem;
+  z-index: -1;
+}
+
+article {
+  margin-bottom: 2rem;
+}
+article .row {
+  align-items: center;
+}
+article h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+pre {
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  white-space: normal;
+  background: #1a2b3b;
+}
+pre .cmd {
+  color: #fff;
+  font-family: "Inconsolata", monospace;
+}
+pre .prmt {
+  color: #31f2cc;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,86 @@
+/*==================== STYLES CSS OF COMMANDES GIT ====================*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+// Variables
+
+$txt-color: #1a2b3b;
+$bg-color: #f5f7f9;
+$bg-code: #1a2b3b;
+$cmd-color: #fff;
+$prmt-color: #31f2cc;
+
+$main-font: 'Quicksand', sans-serif;
+$cmd-font: 'Inconsolata', monospace;
+$fw-txt: 400;
+$fw-txt-bold: 700;
+
+// Utilities 
+
+.strg {
+    font-weight: $fw-txt-bold;
+}
+
+body {
+    font-family: $main-font;
+    font-size: 1.6rem;
+    color: $txt-color;
+    font-weight: $fw-txt;
+    background: $bg-color;
+}
+
+header {
+    height: 10rem;
+
+    .row {
+        height: 100%;
+        align-items: center;
+    }
+
+    h1::before {
+        content: "";
+        height: 1.5rem;
+        width: 15rem;
+        background: $prmt-color;
+        position: absolute;
+        top: 5.5rem;
+        z-index: -1;
+    }
+}
+
+article {
+    margin-bottom: 2rem;
+
+    .row {
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: $fw-txt-bold;
+    }
+}
+pre {    
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+    white-space: normal;
+    background: $bg-code;
+
+    .cmd {
+        color: $cmd-color;
+        font-family: $cmd-font;
+    }
+
+    .prmt {
+        color: $prmt-color;
+    }
+}
